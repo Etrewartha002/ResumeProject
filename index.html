@@ -1,29 +1,132 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>My Resume</title>
-        </head>
-        <body>
-            <h1>My Programming Projects</h1>
-            <img src="./ProfilePic.jpg" height="200">
-            <hr/>
-            <p>Programmer with experience using basic HTML. Seeking work in website design and programming.</p>
-            <h2>Education:</h2>
-            <ul>
-                <li>6th and 7th grade education from Hamilton Middle School</li>
-                <li>Partial Completion of Udemy Web development course</li>
-            </ul>
-            <h2>Work Experience:</h2>
-            <p>Zero years of work experience</p>
-            <h2>Prgramming Ability:</h2>
-            <ul>
-                <li>Basic Html with paragraphs images ect...</li>
-            </ul>
-            <footer>
-                <p>@2024 Evan Trewartha. All rights reserved.<br/>
-                <a href="https://etrewartha002.github.io/ResumeProject/About.html">Contact Me</a>
-                </p>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal Website</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            #background-top{
+                background-image: url(Hero-Background.jpg) ;
+                height: 100vh;
+            }
+            #footer{
+                background-image: url(Hero-Background.jpg) ;
+            }
+           .selfie-container{
+            display: flex;
+            justify-content: center;
+           }
+           #selfie{
+            border-radius: 50%;
+           }
+           h1{
+            font-family: 'Montserrat';
+            letter-spacing: 2px;
+           }
+           #sub-title{
+            font-family: 'Montserrat';
+           }
+           p{
+            font-family: 'Bodoni-Moda-SC';
+           }
+           h2{
+            font-family: 'Montserrat';
+           }
+           h3{
+            font-family: 'Montserrat';
+           }
+           
+           .info-container{
+            display: flex;
+            flex-direction: column;
+           }
+           .resume{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 30vh;
+            padding-top: 30vh;
+           }
+           span{
+            display: flex;
+            justify-content: center;
+           }   
+           
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div id="background-top">
+            <div class="px-4 py-5 my-5 text-center" id="top-container">
+                <h1 class="display-5 fw-bold text-body-emphasis">Evan Trewartha</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4" id="sub-title">Programmer Extraordinaire</p>
+                    <img class="d-block mx-auto mb-4" id="tree" src="Tree-Graphic.png" alt="Simple Tree" width="250" height="250">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row selfie-container">
+                <img class="col-sm-12 col-lg-2 pt-5" id="selfie" src="Selfie.jpg" alt="A kid with glasses and a black ponytail">
+            </div>
+            <div class="row selfie-container">
+                <h2 class="col-lg-3 col-sm-12 pt-5">I'm SO glad you're here</h2>
+            </div>
+            <div class="row selfie-container">
+                <p class="col-sm-12 col-lg-3 pt-5 pb-5">This is me, Evan. Read on to discover more about me. I love to code and enthusiastically await working with you.</p>
+            </div>
+        </div>
+        </hr>
+        <div class="pt-5 pb-5 selfie-container" >
+            <h2>My Interests</h2>
+        </div>
+    
+        <div class="container">
+            <div class="row describer pb-5">
+                <img class="col-lg-2 col-sm-12 pt-5" src="James-Egbert.png" alt="A nerdy Kid with glasses and a ghostbusters shirt.">
+                <div class="col-lg-3 info-container">
+                    <h3 class="col-sm-12">Geeking Out</h3>
+                    <p class="col-sm-12">
+                        I love to geek out about anything nerdy. Computers, computer games and webcomics are all things I love.
+                        The picture to the left isn't actually a drawing of me it's from one of my favorite webcomics(homestuck).
+                        This is also why I got into coding.
+                    </p>
+                </div>
+            </div>
+            <div class="row describer pb-5">
+                <img class="col-lg-2 col-sm-12 pt-5" src="Hiker.jpg" alt="Hiker on mountain silhoutted by sunlight">
+                <div class="col-lg-3 info-container">
+                    <h3 class="col-sm-12">I love Hiking</h3>
+                    <p class="col-sm-12">
+                        Although you may not think it from how much I love my computer I also love to hike mountains and walk their trails.
+                        There is something exhilirating about climbing a literal mountain that just appeals to me. I haven't climbed many but
+                        have done one 4 mile, one 6 mile, and a 8 mile hike.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="resume pt-5">
+            <h2>
+                <span>Check out my resume here: <a href="https://etrewartha002.github.io/ResumeProject/">resume</a></span></br>
+                Or contact me through my email here:</br>
+                <span>evantrewartha@outlook.com</span>
+            </h2>
+        </div>
+        <div class="container-xxl" id="footer">
+            <footer class="py-3 my-4">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="https://github.com/Etrewartha002" class="nav-link px-2 text-body-secondary">Github</a></li>
+                <li class="nav-item"><a href="https://www.reddit.com/user/MentallyAOK/" class="nav-link px-2 text-body-secondary">Reddit</a></li>
+              </ul>
+              <p class="text-center text-body-secondary">© 2024 Evan Trewartha</p>
             </footer>
-        </body>
-    </html>        
+          </div>
+    </body>
+</html>
